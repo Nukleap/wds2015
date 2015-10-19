@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    <include
+       
+        layout="@layout/toolbar" 
+        
+        /> 
+   
+
+   
+   <Button
+       android:id="@+id/barcode_date_button"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Date"
+       
+       /> 
+   <Button
+       android:id="@+id/barcode_time_buttonFrom"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="From"
+       
+       />
+
+   <Button
+       android:id="@+id/barcode_time_buttonTo"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="To" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include 
+        layout="@layout/toolbar"/>     
+
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	
+        >
+    <LinearLayout 
+   	 	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:paddingLeft="6dp"
+    	android:paddingTop="10dp" >
+	
+        <Button 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_1"
+           android:text="Add Vote"/>
+        
+        
+     <LinearLayout 
+         android:id="@+id/linearlayout_1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">   
+         
+     </LinearLayout>    
+      <View 
+	        android:layout_width="match_parent"
+	        android:background="@color/GrayLight3"
+	        android:layout_marginBottom="6dp"
+	        android:layout_marginTop="6dp"
+	        android:layout_height="1dp"/>
+	
+	<TextView
+    		android:id="@+id/textview_1"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+    	/>
+	<View 
+	        android:layout_width="match_parent"
+	        android:background="@color/GrayLight3"
+	        android:layout_marginBottom="6dp"
+	        android:layout_marginTop="6dp"
+	        android:layout_height="1dp"/>
+	
+	<TextView
+    		android:id="@+id/textview_2"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+    	/>
+	
+	<View 
+	        android:layout_width="match_parent"
+	        android:background="@color/GrayLight3"
+	        android:layout_marginBottom="6dp"
+	        android:layout_marginTop="6dp"
+	        android:layout_height="1dp"/>
+	
+	<TextView
+    		android:id="@+id/textview_3"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+    	/>
+	
+	<View 
+	        android:layout_width="match_parent"
+	        android:background="@color/GrayLight3"
+	        android:layout_marginBottom="6dp"
+	        android:layout_marginTop="6dp"
+	        android:layout_height="1dp"/>
+	
+	<TextView
+    		android:id="@+id/textview_4"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+    	/>
+	
+	<View 
+	        android:layout_width="match_parent"
+	        android:background="@color/GrayLight3"
+	        android:layout_marginBottom="6dp"
+	        android:layout_marginTop="6dp"
+	        android:layout_height="1dp"/>
+	</LinearLayout>
+	
+  </ScrollView>
+</LinearLayout>

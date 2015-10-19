@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01_light"
+    android:orientation="vertical" >
+    
+ 	<include
+     	layout="@layout/toolbar"/>   
+
+	<include
+          layout="@layout/main_news_view"
+          />
+			
+	<LinearLayout 
+	    android:layout_width="match_parent"
+   	 	android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="center"
+    	android:orientation="vertical">
+		
+	<GridView
+		android:id="@+id/gridview_1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:columnWidth="100dp"
+    	android:numColumns="auto_fit"
+    	android:verticalSpacing="10dp"
+   		android:horizontalSpacing="10dp"
+    	android:stretchMode="columnWidth"/>
+	
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/PrimaryColor">
+	    <Button 
+	    android:id="@+id/button_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="6dp"
+	    android:background="@color/PrimaryColor"
+	    android:textColor="@color/CurrentFore"
+	    android:text="Register"
+	    />
+	</LinearLayout>
+	
+	
+
+</LinearLayout>

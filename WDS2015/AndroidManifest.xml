@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ida.wds2015"
+    android:versionCode="5"
+    android:installLocation="preferExternal"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.ida.wds2015.ApplicationExtender" 
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ida.wds2015.ActivitySplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityListView"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityDetail"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityProgrammeList"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivitySpeakerList"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivitySpeakerDetails"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityAddNote"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityFavoriteList"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityRegistrationWizard1"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityRegistrationWizard2"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.PaymentActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityPosterList"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityVoteFillDetails"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityPosterAbstractDetails"
+            android:label="@string/app_name">
+        </activity>
+        
+         <activity 
+            android:name="com.ida.wds2015.ActivityMyAccount"
+            android:label="@string/app_name">
+        </activity>
+        
+          <activity 
+            android:name="com.ida.wds2015.ActivityNewsList"
+            android:label="@string/app_name">
+        </activity>
+        
+          <activity 
+            android:name="com.ida.wds2015.scan.BarcodeScaneList"
+            android:label="@string/app_name">
+        </activity>
+        
+          <activity 
+            android:name="com.ida.wds2015.scan.BarcodeSearch"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="com.ida.wds2015.ActivityScanLogin"
+            android:label="@string/app_name">
+        </activity>
+       
+       <activity
+           android:name="com.ida.wds2015.ActivityFeedbackForm"
+           android:label="@string/app_name"
+           />
+       <receiver 
+           android:name="com.ida.wds2015.SpeakerBroadcastReceiver"
+           android:enabled="true">
+       </receiver> 
+       
+       <service android:name="com.ida.manager.ServiceManager" android:enabled="true"/>
+    
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WDS2015</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="payment_confirmation_msg">Don\'t press any key until and unless your receipt has been generated.</string>
+    <string name="admin_userid">0</string>
+    <string name="admin_password">admin</string>
+    <string name="by_admin">Admin</string>
+    <string name="by_exhibitor">Exhibitor</string>
+    <string name="category_prompt">Choose a category</string>
+
+    <string-array name="category_arrays">
+        <item>Poster</item>
+        <item>Exhibition</item>
+        <item>Registration</item>
+        <item>Scientific</item>
+        <item>Privilage Zone</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

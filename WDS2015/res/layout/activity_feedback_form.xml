@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+	<include layout="@layout/toolbar"/>
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+	
+<LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="5dp">
+	<Spinner
+       android:id="@+id/category_list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:entries="@array/category_arrays"
+       android:prompt="@string/category_prompt"/> 
+
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black"/>
+       
+	<EditText
+	    android:id="@+id/edittext_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:hint="Feedback"/>
+	
+	<EditText
+	    android:id="@+id/edittext_2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:hint="Mobile"
+	    android:inputType="phone"/>
+
+	<EditText
+	    android:id="@+id/edittext_3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Email"
+	    android:inputType="textEmailAddress"/>
+	
+	<RatingBar
+	    android:id="@+id/ratingbar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+	
+	<Button
+	    android:id="@+id/button_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Submit"/>
+	
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>
